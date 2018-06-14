@@ -1,0 +1,67 @@
+body {
+  background-color: lightgrey;
+}
+
+* {
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container>* {
+  margin: 4px;
+}
+
+.button {
+  font-size: 24px;
+  background: coral;
+}
+
+.anchor {
+  position: relative;
+}
+
+.flyout-blanket {
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flyout {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background-color: white;
+  width: 400px;
+  max-width: 800px;
+}
+
+.flyout-inner {
+  margin: 16px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .triangle {
+    display: none;
+  }
+
+  .flyout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+  }
+}
+
+img {
+  width: 200px;
+}
